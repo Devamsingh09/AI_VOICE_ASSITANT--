@@ -1,9 +1,10 @@
-SpeechRecognition
-pipwin
-pyaudio
-gTTS
-google-generativeai
-python-dotenv
-streamlit
+SpeechRecognition==3.14.1
+pipwin==0.5.2
+pyaudio==0.2.14
+gTTS==2.5.4
+google-generativeai==	0.8.4
+python-dotenv==1.0.1
+streamlit==1.42.0
 
 - e .
+
