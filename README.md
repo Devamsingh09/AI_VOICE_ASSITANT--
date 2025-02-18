@@ -1,11 +1,12 @@
+Here’s the updated README with the `.env` file instructions and a section for your API key:
+
+---
 
 # AI VOICE ASSISTANT 🤖
 
-![Screenshot (22)](https://github.com/user-attachments/assets/c96177d4-757d-4e59-be61-8e8b3aa3d05d)
-![Screenshot (21)](https://github.com/user-attachments/assets/cced6184-3810-4ffd-aa76-b84f855d9595)
+![Screenshot (22)](https://github.com/user-attachments/assets/c96177d4-757d-4e59-be61-8e8b3aa3d05d)  
+![Screenshot (21)](https://github.com/user-attachments/assets/cced6184-3810-4ffd-aa76-b84f855d9595)  
 ![Screenshot (20)](https://github.com/user-attachments/assets/e566c39f-7676-4cb8-858a-ff47d1323ef8)
-
-
 
 This is an AI Voice Assistant project built using **Streamlit** and the **Gemini API**. It leverages the **Gemini Pro** model to deliver powerful, intelligent responses to user queries, offering a seamless conversational experience.
 
@@ -28,8 +29,9 @@ Before running the project locally, make sure to install the necessary dependenc
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
-    cd <project-directory>
+    git clone https://github.com/Devamsingh09/AI_VOICE_ASSITANT--.git
+
+    cd AI_VOICE_ASSITANT--
     ```
 
 2. Install the required Python packages:
@@ -41,13 +43,13 @@ Before running the project locally, make sure to install the necessary dependenc
 3. Set up your **Gemini API Key**:
 
    - Sign up for **Gemini Pro** and get your API key.
-   - Set the API key as an environment variable for secure access:
+   - Create a `.env` file in the project root directory and add the following line:
 
-     ```bash
-     export GEMINI_API_KEY="your-api-key"
+     ```plaintext
+     GEMINI_API_KEY="your-api-key"
      ```
 
-   Alternatively, you can pass the API key in the app directly, but using an environment variable is recommended for security.
+   This will securely load your API key using the `python-dotenv` package. Make sure to replace `your-api-key` with your actual Gemini API key.
 
 4. Run the app locally:
 
@@ -71,3 +73,7 @@ Before running the project locally, make sure to install the necessary dependenc
 ## Contributing
 
 If you wish to contribute to the project, feel free to fork the repository and submit a pull request with your changes. We welcome contributions that enhance the functionality or fix any issues.
+
+---
+
+Let me know if this looks good or if you need any further modifications!
