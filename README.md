@@ -46,7 +46,7 @@ Before running the project locally, make sure to install the necessary dependenc
    - Create a `.env` file in the project root directory and add the following line:
 
      ```plaintext
-     GEMINI_API_KEY="your-api-key"
+     GOOGLE_API_KEY="your-api-key"
      ```
 
    This will securely load your API key using the `python-dotenv` package. Make sure to replace `your-api-key` with your actual Gemini API key.
