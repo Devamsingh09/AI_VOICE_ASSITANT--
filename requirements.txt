@@ -5,6 +5,7 @@ gTTS==2.5.4
 google-generativeai==	0.8.4
 python-dotenv==1.0.1
 streamlit==1.42.0
-
+protobuf~=5.29.3
+setuptools~=68.2.0
 - e .
 
