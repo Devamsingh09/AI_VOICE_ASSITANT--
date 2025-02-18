@@ -6,7 +6,7 @@ from gtts import gTTS
 load_dotenv()
 
 
-GOOGLE_API_KEY = st.secrets["google"]["api_key"]
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 os.environ["GOOGLE_API_KEY"]=GOOGLE_API_KEY
 
 
