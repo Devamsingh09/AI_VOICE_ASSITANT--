@@ -29,7 +29,7 @@ def voice_input():
 
 def llm_model(user_text):
     genai.configure(api_key=GOOGLE_API_KEY)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     response=model.generate_content(user_text)
     result = response.text
     return result
@@ -38,3 +38,4 @@ def llm_model(user_text):
 def text_to_speech(text):
     tts=gTTS(text=text,lang='en')
     tts.save('speech.mp3')
+
