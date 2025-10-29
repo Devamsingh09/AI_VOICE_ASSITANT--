@@ -1,12 +1,14 @@
+import streamlit as st
 import speech_recognition as sr
 from gtts import gTTS
 import google.generativeai as palm
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
-palm.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# palm.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 def voice_input():
     mics = sr.Microphone.list_microphone_names()
@@ -54,3 +56,4 @@ def llm_model(user_text):
 def text_to_speech(text):
     tts = gTTS(text=text, lang='en')
     tts.save("speech.mp3")
+
